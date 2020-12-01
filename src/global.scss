@@ -24,3 +24,56 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.text {
+    text-align: center;
+    margin: 0;
+    top: 10%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    color: wheat;
+    margin-top: 10px;
+}
+
+.button {
+    text-align: center;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    --background: white;
+    color: black;
+    font-weight: bold;
+    -webkit-animation: animation-button 20000ms infinite;
+    -moz-animation: animation-button 20000ms infinite;
+    -o-animation: animation-button 20000ms infinite;
+    animation: animation-button 20000ms infinite;
+}
+
+@-webkit-keyframes animation-button {
+    0%   {color:red;background: yellow; }
+    25%  {color:yellow;background: yellow; }
+    50%  {color:blue;background: yellow; }
+    75%  {color:green;background: yellow; }
+    100% {color:red;background: yellow; }
+}
+
+@keyframes animation-button {
+    0%   {color:red;background: yellow; }
+    25%  {color:yellow;background: yellow; }
+    50%  {color:blue;background: yellow; }
+    75%  {color:green;background: yellow; }
+    100% {color:red;background: yellow; }
+}

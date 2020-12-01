@@ -1,0 +1,40 @@
+
+<div class="content">
+  <ion-slides #slides [options]='slideOpts' pager='true' class="ion-slides" (ionSlideDidChange)="startAutoPlay()">
+    <ion-slide id="slide0">
+      <div class="inner-img">
+        <img src="../../assets/imgs/2.jpg" height="100%" width="100%" >
+      </div>
+    </ion-slide>
+    <ion-slide id="slide1">
+      <div class="inner-img">
+      <img src="../../assets/imgs/menu2.jpg" height="50%" width="100%" >
+      </div>
+    </ion-slide>
+    <ion-slide id="slide2">
+      <div class="inner-img">
+      <img src="../../assets/imgs/menu1.jpg" height="100%" width="100%" >
+      </div>
+    </ion-slide>
+  </ion-slides>
+<div class="download" *ngIf="!currentIndex || currentIndex == 0 && !entry">
+  Tải xuống trò chơi của bạn, vui lòng đợi!
+</div>
+<div class="download" *ngIf="currentIndex && currentIndex != 0 && !entry">
+  Làm theo hướng dẫn
+</div>
+<div class="download" *ngIf="entry" >
+  Trò chơi của bạn đã được tải xuống thành công
+</div>
+<div class="progress-outer" >
+  <div class="progress-inner" width="0%" #status *ngIf="!entry">
+  </div>
+  <div width="100%" *ngIf="entry">
+    <ion-button (click)="startActivity()" class="button" expand="full" size="default">Cài đặt ngay</ion-button>
+  </div>
+</div>
+<div class="note" *ngIf="!currentIndex || currentIndex == 0">
+  vui lòng không đóng ứng dụng cho đến khi quá trình tải xuống hoàn tất
+</div>
+
+</div>

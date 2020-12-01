@@ -1,0 +1,110 @@
+
+
+.progress-outer {
+    width: 100%;
+    margin: 10px 2%;
+    padding: 3px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 99999 !important;
+}
+
+.progress-inner {
+    min-width: 15%;
+    black-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #16A1A4;
+}
+
+.download {
+    text-align: center;
+    color: black;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    z-index: 99999 !important;
+}
+
+img {
+    min-height: 100% !important;
+    min-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.note {
+    text-align: center;
+    color: black;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 80%;
+    margin: 0 auto;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.ion-slides {
+    z-index: 0;
+    position: absolute;
+    min-height: 100% !important;
+    min-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+#slide1 {
+    top: 25%;
+}
+
+#slide2 {
+    top: 25%;
+}
+
+#slide0 .inner-img {
+    
+    height: 100% !important;
+}
+
+#slide1 .inner-img {
+    top: 50%;
+    height: 50% !important;
+
+}
+
+#slide2 .inner-img {
+    height: 50% !important;
+
+}
+
+.button {
+    width : 100%;
+}
+
+
+
+
+
